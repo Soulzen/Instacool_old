@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp, faRetweet } from '@fortawesome/free-solid-svg-icons';
+
 const style = {
 	backgroundColor: '#fff',
 	padding: '10px 15px',
@@ -24,8 +27,12 @@ export class Post extends Component<IPostProps> {
 			<div style={style}>
 				<img src={image} />
 				<div style={footerStyle}>
-					<div style={{ flex: 1, textAlign: 'center' }}>Like</div>
-					<div style={{ flex: 1, textAlign: 'center' }}>Compartir</div>
+					<div style={{ flex: 1, textAlign: 'center', padding: '10px 15px', cursor: 'pointer' }}>
+						<FontAwesomeIcon icon={faThumbsUp} /> Like
+					</div>
+					<div style={{ flex: 1, textAlign: 'center', padding: '10px 15px', cursor: 'pointer' }}>
+						<FontAwesomeIcon icon={faRetweet} /> Compartir
+					</div>
 				</div>
 			</div>
 		);
