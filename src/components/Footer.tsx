@@ -15,7 +15,8 @@ const styles = {
 		flex: 1,
 		textAlign: 'center',
 		padding: '10px 15px',
-		cursor: 'pointer'
+		cursor: 'pointer',
+		border: 'solid 1px #ccc'
 	}
 };
 

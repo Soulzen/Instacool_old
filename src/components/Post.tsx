@@ -5,7 +5,7 @@ import Footer from './Footer';
 const style = {
 	backgroundColor: '#fff',
 	padding: '10px 15px',
-	border: '1px solid #eee',
+	border: '1px solid #ccc',
 	marginBottom: '10px'
 };
 
