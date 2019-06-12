@@ -1,0 +1,33 @@
+[debug] [2019-06-11T13:26:22.765Z] ----------------------------------------------------------------------
+[debug] [2019-06-11T13:26:22.767Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alber\AppData\Local\Yarn\Data\global\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2019-06-11T13:26:22.767Z] CLI Version:   6.11.0
+[debug] [2019-06-11T13:26:22.767Z] Platform:      win32
+[debug] [2019-06-11T13:26:22.767Z] Node Version:  v8.16.0
+[debug] [2019-06-11T13:26:22.767Z] Time:          Tue Jun 11 2019 15:26:22 GMT+0200 (Hora de verano romance)
+[debug] [2019-06-11T13:26:22.767Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-11T13:26:22.774Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-11T13:26:22.774Z] > authorizing via signed-in user
+[debug] [2019-06-11T13:26:22.774Z] [iam] checking project instacool-6fc11 for permissions ["firebase.projects.get"]
+[debug] [2019-06-11T13:26:22.776Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/instacool-6fc11:testIamPermissions  
+
+[debug] [2019-06-11T13:26:23.680Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-11T13:26:23.683Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/instacool-6fc11  
+ 
+[debug] [2019-06-11T13:26:24.513Z] <<< HTTP RESPONSE 200
+[info] +  functions: Using node@8 from host.
+[debug] [2019-06-11T13:26:24.532Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/617643411295:getServerAppConfig  
+ 
+[debug] [2019-06-11T13:26:24.773Z] <<< HTTP RESPONSE 200
+[info] +  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "C:\Users\alber\Documents\Proyectos\instacool\functions" for Cloud Functions...
+[debug] [2019-06-11T13:26:25.110Z] Functions runtime initialized.
+[debug] [2019-06-11T13:26:25.110Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions-test" to be installed as a development dependency. To fix this, run "npm install --save-dev firebase-functions-test" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-06-11T13:27:26.896Z] File C:\Users\alber\Documents\Proyectos\instacool\functions\src\index.ts changed, reloading triggers
+[debug] [2019-06-11T13:27:28.206Z] Functions runtime initialized.
+[debug] [2019-06-11T13:27:28.207Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[warn] !  The Cloud Functions emulator requires the module "firebase-functions-test" to be installed as a development dependency. To fix this, run "npm install --save-dev firebase-functions-test" in your functions directory.
+[info] i  functions: Your functions could not be parsed due to an issue with your node_modules (see above)
+[debug] [2019-06-11T13:28:31.753Z] File C:\Users\alber\Documents\Proyectos\instacool\functions\src\index.ts changed, reloading triggers
