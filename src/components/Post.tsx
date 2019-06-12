@@ -6,10 +6,29 @@ const style = {
 	border: '1px solid #eee'
 };
 
-export class Post extends Component {
+const footerStyle = {
+	backgroundColor: '#eee',
+	marginLeft: '-15px',
+	marginBottom: '-10px',
+	width: 'calc(100% + 30px)',
+	display: 'flex'
+} as React.CSSProperties;
+
+interface IPostProps {
+	image: string;
+}
+export class Post extends Component<IPostProps> {
 	public render() {
-		const { children } = this.props;
-		return <div style={style}>{children}</div>;
+		const { image } = this.props;
+		return (
+			<div style={style}>
+				<img src={image} />
+				<div style={footerStyle}>
+					<div style={{ flex: 1, textAlign: 'center' }}>Like</div>
+					<div style={{ flex: 1, textAlign: 'center' }}>Compartir</div>
+				</div>
+			</div>
+		);
 	}
 }
 
