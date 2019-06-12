@@ -11,13 +11,14 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 import * as reducers from './ducks';
+import services from './services';
 
 const history = createHistory();
 const store = createStore(
 	combineReducers({
 		...reducers
 	}),
-	applyMiddleware(thunk)
+	applyMiddleware(thunk.withExtraArgument(services))
 );
 
 ReactDOM.render(
