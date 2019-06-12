@@ -2,16 +2,30 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { Router } from 'react-router';
 import createHistory from 'history/createBrowserHistory';
 import * as serviceWorker from './serviceWorker';
 
+import { Router } from 'react-router';
+import { Provider } from 'react-redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+
+import * as reducers from './ducks';
+
 const history = createHistory();
+const store = createStore(
+	combineReducers({
+		...reducers
+	}),
+	applyMiddleware(thunk)
+);
 
 ReactDOM.render(
-	<Router history={history}>
-		<App />
-	</Router>,
+	<Provider store={store}>
+		<Router history={history}>
+			<App />
+		</Router>
+	</Provider>,
 	document.getElementById('root')
 );
 
